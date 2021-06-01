@@ -4,7 +4,8 @@
         <x-new-item/>
         <div class="formContainer">
             <p>new item</p>
-            <form action="" method="post">
+            <form action="{{ route('createExpendable') }}" method="post">
+            @csrf
                 <label for="productName">product name</label> <br>
                 <input type="text" name="productName"> <br>
 

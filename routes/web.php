@@ -96,11 +96,11 @@ Route::get('/home/expendable', function (){
 });
 
 // create record consumable
-Route::post('/home/consumable', [homepageController::class, 'create_consumable']);
+Route::post('/home/consumable', [homepageController::class, 'create_consumable'])->name('createConsumable');
 // create record permanent
-Route::post('/home/permanent',[homepageController::class,'create_permanent']);
+Route::post('/home/permanent',[homepageController::class,'create_permanent'])->name('createPermanent');
 // create record expendable
-Route::post('/home/expendable',[homepageController::class,'create_expendable']);
+Route::post('/home/expendable',[homepageController::class,'create_expendable'])->name('createExpendable');
 
 // REPORTS
 

@@ -65,32 +65,46 @@ class homepageController extends Controller
     }
     public function create_consumable(Request $request){
         // $life = $request->input('expDate') - $request->input('delDate');
-        $totalPrice = $request->input('InitQuantity') * $request->input('price');
+        $totalPrice = $request->input('initialQuantity') * $request->input('unitPrice');
         $d = Date("Y-m-d");
-        $y = $request->input('expDate');
+        $y = $request->input('expiryDate');
         $date1 = strtotime($d);
         $date2 = strtotime($y);
         $sec = $date2 - $date1;
         $days = $sec / 86400;
 
+        $validated = $request->validate([
+            'productName'=>'required|unique:consumables,productName',
+            'unitPrice'=>'required|numeric',
+            'expiryDate'=>'required|date',
+            'deliveryDate'=>'required',
+            'initialQuantity'=>'required|numeric'
+        ]);
 
         $consumable = Consumable::create([
-            'productName'=>$request->input('proName'),
-            'unitPrice'=>$request->input('price'),
-            'expiryDate'=>$request->input('expDate'),
-            'deliveryDate'=>$request->input('delDate'),
-            'initialQuantity'=>$request->input('InitQuantity'),
+            'productName'=>$request->input('productName'),
+            'unitPrice'=>$request->input('unitPrice'),
+            'expiryDate'=>$request->input('expiryDate'),
+            'deliveryDate'=>$request->input('deliveryDate'),
+            'initialQuantity'=>$request->input('initialQuantity'),
             'life'=>$days,
             'totalPrice'=>$totalPrice,
-            'remainingQuantity'=>$request->input('InitQuantity')
+            'remainingQuantity'=>$request->input('initialQuantity')
         ]);
-        session()->flash('msg', '*item recorded successfully');
+        session()->flash('msg', 'Item recorded successfully');
         return redirect()->back();
     }
+    // I.m s.o.r.r.y. :-D
     public function create_permanent(Request $request){
+        $validated = $request->validate([
+            'productName'=>'required|unique:expendables,productName',
+            'unitPrice'=>'required|numeric',
+            'quantity'=>'required|numeric'
+        ]);
+
         $price = $request->input('unitPrice') * $request->input('quantity');
         $permanent =  Permanent::create([
-            'productName'=>$request->input('pname'),
+            'productName'=>$request->input('productName'),
             'unitPrice'=>$request->input('unitPrice'),
             'purchasePrice'=>$price,
             'quantity'=>$request->input('quantity'),
@@ -100,8 +114,12 @@ class homepageController extends Controller
         return redirect()->back();
     }
     public function create_expendable(Request $request){
+        $validated = $request->validate([
+            'productName'=>'required|alpha_num',
+            'quantity'=>'required|numeric'
+        ]);
         $expendable = Expendable::create([
-            'productName'=>$request->input('pname'),
+            'productName'=>$request->input('productName'),
             'quantity'=>$request->input('quantity')
         ]);
         session()->flash('msg', 'item recorded successfully');
