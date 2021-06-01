@@ -2,35 +2,35 @@
 @section('content')
 
     <section class="homeContainer">
-        <a href="{{ url('/home/category/updates') }}" class="dailyUpdates">
+        <a href="{{ url('/home/category/updates') }}">
             <img src="{{ asset('img/undraw_add_friends_re_3xte.svg') }}" alt="">
             <p>daily updates</p>
         </a>
-        <a href="{{ url('/home/new_user') }}" class="newUser">
+        <a href="{{ url('/home/new_user') }}">
             <img src="{{ asset('img/new.svg') }}" alt="">
             <p>new user</p>
         </a>
-        <a href="" class="newItem">
+        <a href="{{ route('new_item') }}">
             <img src="{{ asset('img/newEnt.svg') }}" alt="">
             <p>new item</p>
         </a>
-        <a href="" class="placeOrder">
+        <a href="">
             <img src="{{ asset('img/order.svg') }}" alt="">
             <p>place order</p>
         </a>
-        <a href="" class="manageStore">
+        <a href="" >
             <img src="{{ asset('img/manage.svg') }}" alt="">
             <p>manage store</p>
         </a>
-        <a href="" class="reports">
+        <a href="" >
             <img src="{{ asset('img/reports.svg') }}" alt="">
             <p>reports</p>
         </a>
-        <a href="" class="requestItem">
+        <a href="" >
             <img src="{{ asset('img/process.svg') }}" alt="">
             <p>request an item</p>
         </a>
-        <a href="" class="payments">
+        <a href="" >
             <img src="{{ asset('img/undraw_printing_invoices_5r4r.svg') }}" alt="">
             <p>payments</p>
         </a>

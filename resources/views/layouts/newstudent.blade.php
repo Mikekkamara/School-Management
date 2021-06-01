@@ -8,13 +8,16 @@
         @csrf
             <label for="admissionNumber">admission number</label> <br>
             <input type="number" name="admissionNumber"
-            class="@error('admissionNumber') is-invalid @enderror"> <br>
+            class="@error('admissionNumber') is-invalid @enderror"
+            value="{{ old('admissionNumber') }}"> <br>
                 @error('admissionNumber')
                     <span>{{ $message }}</span> <br>
                 @enderror
 
             <label for="studentName">student name</label> <br>
-            <input type="text" name="studentName"> <br>
+            <input type="text" name="studentName"
+            class="@error('admissionNumber') is-invalid @enderror"
+            value="{{ old('studentName') }}"> <br>
                 @error('studentName')
                     <span>{{ $message }}</span> <br>
                 @enderror

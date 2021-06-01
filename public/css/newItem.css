@@ -1,0 +1,33 @@
+.newItem{
+    height: 70vh;
+    width: 10vw;
+    display: flex;
+    padding: 1%;
+    align-self: auto;
+    flex-direction: column;
+    text-align: center;
+}
+.newItem a{
+    height: 40%;
+    width: 100%;
+    font-weight: 600;
+    margin: 4% auto;
+    border-radius: 5px;
+    border: 0.12rem solid var(--sidebartextColor);
+    background: var(--sideTheme);
+    border-radius: 2px;
+    transition: all 0.3s ease-in;
+    z-index: 8;
+    text-transform: capitalize;
+    cursor: default;
+}
+.newItem a:hover{
+    transform: scale(1.1,1.1);
+}
+.newItem > a > img{
+    width: 60%;
+    height: 60%;
+}
+
+
+

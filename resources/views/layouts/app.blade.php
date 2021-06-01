@@ -54,7 +54,7 @@
                     <p>School Management Systems &copy;2021</p>
                 </div>
                 <div class="footerDate">
-                    <p>Saturday, 29 May, 2021</p>
+                    <p id="time"></p>
                 </div>
             </footer>
 

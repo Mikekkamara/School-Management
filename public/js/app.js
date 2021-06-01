@@ -4,5 +4,8 @@ logoutButton.onclick , function(){
     Event.preventDefault();
 };
 
+var time = new Date();
+var applicationTime = time.toDateString();
+document.getElementById("time").innerHTML = applicationTime;
 
 

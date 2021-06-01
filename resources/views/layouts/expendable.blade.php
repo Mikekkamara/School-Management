@@ -1,24 +1,19 @@
 @extends('layouts.app')
 @section('content')
-    <div class="exp_container">
-        <p class="exp_title">new expendable record <a href=""><i class="hey fas fa-times"></i></a></p>
-        <form action="{{ url('/home/expendable') }}" id="expendable" method="post">
-        @csrf
-        <div>
-            <label for="pname">product name</label>
-            <input type="text" name="pname" >
-        </div>
+    <div class="expendableContainer">
+        <x-new-item/>
+        <div class="formContainer">
+            <p>new item</p>
+            <form action="" method="post">
+                <label for="productName">product name</label> <br>
+                <input type="text" name="productName"> <br>
 
-        <div>
-            <label for="quantity">quantity</label>
-            <input type="number" name="quantity">
-        </div>
+                <label for="quantity">quantity</label> <br>
+                <input type="number" name="quantity"> <br>
 
-        </form>
-        <div class="success">
-
-            {!! Session::has('msg') ? Session::get('msg') : ' ' !!}
+                <button type="submit">submit</button>
+                <h6>{!! Session::has('msg') ? Session::get('msg') : ' ' !!}</h6>
+            </form>
         </div>
-        <button type="submit" class="exp_submit" onclick="event.preventDefault();document.getElementById('expendable').submit();">submit</button>
     </div>
 @endsection

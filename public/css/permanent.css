@@ -1,0 +1,47 @@
+.permanentContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.permanentContainer > .formContainer > form > label{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+.permanentContainer > .formContainer > form > input{
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    border: 1px solid var(--sidebarColor);
+}
+.permanentContainer > .formContainer > form > select{
+    height: 2rem;
+    margin: 0.5rem 0;
+    text-transform: capitalize;
+    font-weight: 600;
+    border: none;
+    border-bottom: 2px solid var(--sidebarColor);
+    width: auto;
+}
+.permanentContainer > .formContainer  > p{
+    font-size: 1.4rem;
+    color: #284982;
+    font-weight: 600;
+    padding: 0.2rem 0;
+    margin-bottom: 2%;
+    text-transform: capitalize;
+}
+.permanentContainer > .formContainer > form > button{
+    width: 60%;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-weight: 800;
+    margin-top: 10%;
+}
+.permanentContainer > .formContainer > form > select:focus{
+    outline: none;
+}
+.permanentContainer > .formContainer > form > select > option{
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 0.1rem;
+}
