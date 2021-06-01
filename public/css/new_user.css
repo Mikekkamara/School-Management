@@ -1,0 +1,41 @@
+.navBar{
+    height: 50vh;
+    width: 10vw;
+    display: flex;
+    padding: 1%;
+    align-self: auto;
+    flex-direction: column;
+    text-align: center;
+}
+.navBar a{
+    height: 20%;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 600;
+    margin: 4%;
+    border: 0.12rem solid var(--sidebartextColor);
+    background: var(--sideTheme);
+    border-radius: 2px;
+    transition: all 0.3s ease-in;
+    z-index: 8;
+    cursor: default;
+}
+.navBar a:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: 2px 5px 6px var(--sidebartextColor);
+}
+.navBar > a > img{
+    width: 60%;
+    height: 60%;
+}
+.active{
+    border: 0.2rem solid var(--sidebartextColor) !important;
+}
+
+
+
+
+
+
+
+

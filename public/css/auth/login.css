@@ -1,0 +1,143 @@
+@import url('../variables.css');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body,
+html {
+    min-height: 100vh;
+}
+
+.textContainer{
+    min-height: 100vh;
+    display: flex;
+}
+img{
+    margin: 0 auto;
+    height: 100vh;
+    width: 70vw;
+    object-fit: fill;
+    margin-left: 0;
+}
+.loginForm{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    margin-right: 10%;
+    height: fit-content;
+    width: fit-content;
+    border: 3px solid var(--sidebarColor);
+    padding: 2%;
+}
+.loginForm label{
+    display: block;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-bottom: -20px;
+}
+.loginForm .rememberMe{
+    display: inline-block;
+}
+.loginForm button{
+    padding: 0.3rem;
+    width: 40%;
+    margin: 10px auto;
+    display: block;
+    font-variant: small-caps;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+}
+.loginForm > form > button:hover{
+    border: 1px solid var(--sidebartextColor);
+}
+.loginForm > form > input{
+    font-size: 1.2rem;
+    height: 2rem ;
+    border-radius: 0;
+    padding: 3px;
+    background: var(--sideTheme);
+    border: none;
+    width: 95%;
+    border-bottom: 3px solid var(--sidebarColor);
+}
+.loginForm input,textarea{
+    background: var(--sideTheme);
+}
+.loginForm input:focus{
+    outline: none;
+    background: var(--sideTheme);
+}
+.loginForm span{
+    display: block;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    color: red;
+}
+.loginForm > form > a{
+    color: black;
+    text-transform: capitalize;
+}
+.checkboxContainer{
+    margin-top: 5%;
+}
+.loginWords{
+    position: absolute;
+    color: var(--sidebartextColor);
+    text-transform: capitalize;
+    white-space: pre-wrap;
+    width: 50%;
+    height: fit-content;
+    top: 2%;
+}
+.loginWords .first{
+    animation: slideIn 1s ease-in   forwards;
+    font-size: 3.6rem;
+    font-weight: 600;
+    position: relative;
+    left: 0;
+}
+.loginWords .second{
+    animation: slideIn 1s ease-in 1s forwards;
+    font-size: 3.6rem;
+    font-weight: 600;
+    position: relative;
+    left: -100%;
+}
+@keyframes slideIn{
+    0% {left: -100%;}
+    100% {left: 5%;}
+}
+.loginWords .third{
+    animation: slideIn 1s ease-in 4s forwards;
+    font-size: 2.5rem;
+    font-weight: 600;
+    position: relative;
+    left: -100%;
+    color: #284982;
+}
+.loginWords .fourth{
+    position: absolute;
+    animation: grow 1s ease-in-out 5s infinite;
+    color: var(--sidebartextColor);
+}
+@keyframes grow{
+    0% {transform: scale(1,1);}
+    100% {transform: scale(1.4,1.4);}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400&display=swap");
+@import url("variables.css");
+@import url('home.css');
+@import url('comingSoon.css');
+@import url('new_user.css');
+@import url('student.css');
+@import url('teacher.css');
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Open Sans", "San Serif";
+}
+
+body,
+html {
+    min-height: 100vh;
+}
+
+.appContainer {
+    height: 100vh;
+    display: flex;
+}
+.sidebar {
+    width: 20%;
+    background: var(--sidebarColor);
+    padding-top: 5.2%;
+}
+.sidebarLinks > li {
+    height: 2rem;
+    text-align: center;
+    color: var(--sidebartextColor);
+    letter-spacing: var(--letterSpace);
+    font-variant: small-caps;
+    margin: 3px 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+.sidebarLinks > li > a {
+    color: var(--sidebartextColor);
+}
+.sidebarLinks > li:hover {
+    background: #525050;
+    font-weight: 600;
+}
+.contentContainer {
+    width: 100%;
+}
+.navigationBoard {
+    display: flex;
+    justify-content: space-between;
+    min-height: 10%;
+    border-bottom: 2px solid var(--sidebartextColor);
+}
+.dropdownDashboard {
+    position: absolute;
+    display: none;
+    z-index: 10;
+    background: var(--sideTheme);
+    transition: all 2s ease-in;
+    margin-top: 2px;
+    width: 20%;
+    padding: 0.5rem;
+}
+.dropdownDashboard:hover ~ .dropdownDashboard{
+    display: block;
+}
+.dropdownDashboard > ul > li {
+    margin: 1px;
+    display: block;
+}
+.yieldContent {
+    min-height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footerBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9.3%;
+}
+.footerCopyright {
+    font-size: 0.7rem;
+    margin-left: 1%;
+}
+.footerDate {
+    font-size: 0.8rem;
+    font-variant: small-caps;
+    font-weight: 600;
+}
+.dashboardTitle {
+    height: fit-content;
+    margin: auto 0;
+    margin-left: 2%;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--sidebartextColor);
+    padding: 0.1rem;
+}
+
+.userName {
+    margin: auto 5%;
+    border: 2px solid var(--sidebartextColor);
+    min-height: fit-content;
+    border-radius: 3px;
+}
+.userName:hover .dropdownDashboard {
+    display: block;
+}
+.userName:hover a {
+    font-weight: 600;
+}
+.userName > a {
+    padding: 0.3rem;
+    display: block;
+}
+.moreLinks {
+    color: white;
+    text-align: center;
+    display: none;
+    margin-top: -5px;
+    transition: all 3s ease-in;
+}
+.far,
+.fas {
+    margin-right: 2%;
+}
+.moreLinks > li {
+    margin: 10px;
+}
+.more:hover ~ .moreLinks {
+    display: block;
+}
+.moreLinks:hover {
+    display: block;
+}
+
+
+

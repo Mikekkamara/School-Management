@@ -1,0 +1,67 @@
+.studentContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.studentContainer > .formContainer{
+    border: 2px solid #284982;
+    border-radius: 3px;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+    margin: 0 auto;
+}
+.studentContainer > .formContainer > form > label{
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 0.06rem;
+}
+.studentContainer > .formContainer > form > input{
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    margin-top: 0.2rem;
+    border: 0.12rem solid var(--sidebarColor);
+}
+.studentContainer > .formContainer > form > select{
+    height: 2rem;
+    margin: 0.5rem 0;
+    text-transform: capitalize;
+    font-weight: 600;
+    border: none;
+    border-bottom: 2px solid var(--sidebarColor);
+    width: auto;
+}
+/*
+* Student form errors
+*/
+.studentContainer > .formContainer > form > span {
+    font-size: 0.7rem;
+    color: red;
+    font-weight: 600;
+}
+.studentContainer > .formContainer > form > button{
+    width: 60%;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-weight: 800;
+
+}
+.studentContainer > .formContainer > form > select > option{
+    text-transform: capitalize;
+    font-weight: 500;
+    padding: 0.1rem;
+    border: 0.12rem solid red;
+}
+.studentContainer > .formContainer > p{
+    font-size: 1.4rem;
+    color: #284982;
+    font-weight: 600;
+    padding: 0.2rem 0;
+    margin-bottom: 2%;
+}
+
+
+
+
+

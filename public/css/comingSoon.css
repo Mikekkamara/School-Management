@@ -1,0 +1,25 @@
+.comingSoon p:first-child{
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+.comingSoon p:not(:first-child){
+    margin: 10px;
+    margin-left: 0;
+    text-transform: capitalize;
+    color: var(--sidebartextColor);
+}
+.comingSoon a{
+    text-align: center;
+    text-decoration: underline;
+    padding: 2px;
+    text-transform: capitalize;
+}
+.comingSoon p span{
+    color: #3750a2;
+}
+
+
+
+
+
