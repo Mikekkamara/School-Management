@@ -4,7 +4,7 @@
     <x-nav-bar/>
     <div class="formContainer">
         <p>Create Student</p>
-        <form action="" method="post">
+        <form action="{{ route('createStudent') }}" method="post">
         @csrf
             <label for="admissionNumber">admission number</label> <br>
             <input type="number" name="admissionNumber"

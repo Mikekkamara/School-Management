@@ -113,38 +113,48 @@ class homepageController extends Controller
     // suppliers
     public function create_supplier(Request $request){
         $validated = $request->validate([
-            'supNo'=> 'required|numeric|max:4',
-            'coName'=>'required|alpha_num',
-            'phyAddress'=>'required|alpha_dash',
-            'telNo'=>'numeric|required|max:13'
+            'supplierNumber'=>'required|numeric',
+            'companyName'=>'required|alpha_num',
+            'physicalAddress'=>'nullable',
+            'telephoneNumber'=>'required|numeric'
         ]);
         $supplier = Supplier::create([
-            'supplierNumber'=>$request->input('supNo'),
-            'companyName'=>$request->input('coName'),
-            'physicalAddress'=>$request->input('phyAddress'),
-            'telephoneNumber'=>$request->input('telNo')
+            'supplierNumber'=>$request->input('supplierNumber'),
+            'companyName'=>$request->input('companyName'),
+            'physicalAddress'=>$request->input('physicalAddress'),
+            'telephoneNumber'=>$request->input('telephoneNumber')
         ]);
         session()->flash('msg', 'Created successfully');
         return redirect()->back();
     }
     // student
     public function create_student(Request $request){
+        $validated = $request->validate([
+            'admissionNumber'=>'numeric|required|unique:students,admissionNumber',
+            'studentName'=>'required|bail'
+        ]);
         $student = Student::create([
-            'admissionNumber'=>$request->input('admNo'),
-            'studentName'=>$request->input('studName'),
-            'class'=>$request->input('class'),
-            'house'=>$request->input('house')
+            'admissionNumber'=>$request->input('admissionNumber'),
+            'studentName'=>$request->input('studentName'),
+            'class'=>$request->input('className'),
+            'house'=>$request->input('houseName')
         ]);
         session()->flash('msg', 'Created successfully');
         return redirect()->back();
     }
     // teacher
     public function create_teacher(Request $request){
+        $validated = $request->validate([
+            'idNumber'=>'numeric|required',
+            'teacherName'=>'required',
+            'teacherAddress'=>'required|alpha_num',
+            'mobileNumber'=>'required|numeric'
+        ]);
         $teacher = Teacher::create([
-            'idNumber'=>$request->input('number'),
-            'teacherName'=>$request->input('trname'),
-            'address'=>$request->input('addr'),
-            'mobNumber'=>$request->input('mobNumber')
+            'idNumber'=>$request->input('idNumber'),
+            'teacherName'=>$request->input('teacherName'),
+            'address'=>$request->input('teacherAddress'),
+            'mobNumber'=>$request->input('mobileNumber')
 
         ]);
         session()->flash('msg', 'Created successfully');

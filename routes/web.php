@@ -69,9 +69,15 @@ Route::get('/home/new_user/supplier', function () {
 SAVE NEW USER
 =============
 */
-Route::post('/home/new_user/student', [homepageController::class, 'create_student']);
-Route::post('/home/new_user/teacher', [homepageController::class, 'create_teacher']);
-Route::post('/home/new_user/supplier', [homepageController::class, 'create_supplier']);
+Route::post('/home/new_user/student',
+    [homepageController::class, 'create_student'
+])->name('createStudent');
+Route::post('/home/new_user/teacher',
+    [homepageController::class, 'create_teacher'
+])->name('createTeacher');
+Route::post('/home/new_user/supplier',
+    [homepageController::class, 'create_supplier'
+])->name('createSupplier');
 
 // reorder
 Route::get('/home/store/reorder', [homepageController::class, 'reorder']);

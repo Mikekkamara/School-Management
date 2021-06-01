@@ -9,3 +9,11 @@ var applicationTime = time.toDateString();
 document.getElementById("time").innerHTML = applicationTime;
 
 
+
+// var submitButton = document.getElementById("submitTeacher");
+
+function button(){
+    location.reload();
+}
+
+

@@ -4,7 +4,8 @@
         <x-nav-bar/>
         <div class="formContainer">
             <p>Create Supplier</p>
-            <form action="" method="post">
+            <form action="{{ route('createSupplier') }}" method="post">
+            @csrf
                 <label for="supplierNumber">supplier number</label> <br>
                 <input type="number" name="supplierNumber"
                 class="@error('supplierNumber') is-invalid @enderror"

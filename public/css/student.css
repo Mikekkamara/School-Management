@@ -40,6 +40,9 @@
     color: red;
     font-weight: 600;
 }
+.studentContainer > .formContainer > form > h6{
+    color: #1de11dcd;
+}
 .studentContainer > .formContainer > form > button{
     width: 60%;
     font-size: 1.1rem;

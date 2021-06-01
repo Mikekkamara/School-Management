@@ -13,6 +13,12 @@
     padding: 0.4rem;
     border: 1px solid var(--sidebarColor);
 }
+.permanentContainer > .formContainer > form > span {
+    font-size: 0.7rem;
+    color: red;
+    font-weight: 600;
+}
+
 .permanentContainer > .formContainer > form > select{
     height: 2rem;
     margin: 0.5rem 0;

@@ -8,6 +8,7 @@
     text-transform: capitalize;
     font-weight: 600;
 }
+
 .expendableContainer > .formContainer > form > input{
     font-size: 1.2rem;
     padding: 0.4rem;

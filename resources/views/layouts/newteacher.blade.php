@@ -4,7 +4,7 @@
         <x-nav-bar/>
         <div class="formContainer">
             <p>create teacher</p>
-            <form action="" method="post">
+            <form action="{{ route('createTeacher') }}" method="post">
             @csrf
                 <label for="idNumber">ID number</label> <br>
                 <input type="number" name="idNumber"
@@ -38,7 +38,7 @@
                         <span>{{ $message }}</span> <br>
                     @enderror
 
-                <button >submit</button>
+                <button id="submitTeacher">submit</button>
                 <h6>{!! Session::has('msg') ? Session::get('msg') : ' ' !!}</h6>
             </form>
         </div>

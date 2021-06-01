@@ -21,6 +21,9 @@
     padding: 0.2rem 0;
     margin-bottom: 2%;
 }
+.supplierContainer > .formContainer > form > h6{
+    color: #1de11dcd;
+}
 .supplierContainer > .formContainer > form > button{
     width: 60%;
     font-size: 1.1rem;

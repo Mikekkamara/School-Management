@@ -22,6 +22,9 @@
     margin-top: 0.2rem;
     border: 0.12rem solid var(--sidebarColor);
 }
+.teacherContainer > .formContainer > form > h6{
+    color: #1de11dcd;
+}
 .teacherContainer > .formContainer >  p{
     font-size: 1.4rem;
     text-transform: capitalize;
