@@ -1,50 +1,36 @@
 @extends('layouts.app')
 @section('content')
-    <div class="newsup_container">
-        <p class="newsup_title">new supplier <a href="{{ url('/home/new_user') }}"><i class="hey fas fa-times"></i></a></p>
-        <div class="success">
+    <div class="supplierContainer">
+        <x-nav-bar/>
+        <div class="formContainer">
+            <label for="supplierNumber">supplier number</label> <br>
+            <input type="number" name="supplierNumber"
+            class="@error('supplierNumber') is-invalid @enderror"> <br>
+                @error('supplierNumber')
+                    <span>{{ $message }}</span> <br>
+                @enderror
 
-            {!! Session::has('msg') ? Session::get('msg') : ' ' !!}
+            <label for="companyName">company name</label> <br>
+            <input type="text" name="companyName"
+            class="@error('companyName') is-invalid @enderror"><br>
+                @error('companyName')
+                    <span>{{ $message }}</span> <br>
+                @enderror
+
+            <label for="physical Address">physical address</label> <br>
+            <input type="text" name="physicalAddress" > <br>
+
+            <label for="telephoneNumber">telephone number</label> <br>
+            <input type="tel" name="telephoneNumber"
+            class="@error('telephoneNumber') is-invalid @enderror"> <br>
+                @error('telephoneNumber')
+                    <span>{{ $message }}</span> <br>
+                @enderror
+
+            <button type="submit">submit</button>
         </div>
-        <form action="{{ url('/home/new_user/supplier') }}" method="POST" id="sup_form" class="newsup_form">
-        @csrf
-            <div class="supNo" id="supNo">
-                <label for="supNo">{{ __('Suppplier Number') }}</label>
-
-                <input type="number"
-                        name="supNo"
-                        max="100"
-                        min="50"
-                        autofocus
-
-                        class="@error('supNo') is-invalid @enderror">
-
-                @error('supNo')
-                    <p class="alert alert-danger">{{ $message }}</p>
-                @enderror
-
-            </div>
-          
-            <div class="coName">
-                <label for="coName">company name</label>
-                <input type="text"
-                        name="coName"
-                        class="@error('coName') is-invalid @else is-valid @enderror">
-                @error('supNo')
-                    <p class="alert alert-danger">{{ $message }}</p>
-                @enderror
-            </div>
-
-            <div class="phyAddress">
-                <label for="phyAddress">address</label>
-                <input type="text" name="phyAddress" >
-            </div>
-
-            <div class="telNo">
-                <label for="telNo">telephone number</label>
-                <input type="tel" name="telNo">
-            </div>
-        </form>
-        <button class="sup_submit" type="submit" onclick="event.preventDefault();document.getElementById('sup_form').submit();">submit</button>
     </div>
 @endsection
+
+
+

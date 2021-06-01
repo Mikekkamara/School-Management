@@ -1,5 +1,47 @@
-
-
+.teacherContainer{
+    height: 100%;
+    width:100% ;
+    display: flex;
+    justify-content: space-between;
+}
+.formContainer{
+    width: fit-content;
+    border: 2px solid #284982;
+    margin: 0 auto;
+    padding: 0.5rem;
+    height: fit-content;
+}
+.teacherContainer > .formContainer > form > label{
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+}
+.teacherContainer > .formContainer > form > input{
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    margin-top: 0.2rem;
+    border: 0.12rem solid var(--sidebarColor);
+}
+.teacherContainer > .formContainer >  p{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+    color: #284982;
+    font-weight: 600;
+    padding: 0.2rem 0;
+    margin-bottom: 2%;
+}
+.teacherContainer > .formContainer > form > span {
+    font-size: 0.7rem;
+    color: red;
+    font-weight: 600;
+}
+.teacherContainer > .formContainer > form > button{
+    width: 60%;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-weight: 800;
+    margin-top: 1rem;
+}
 
 
 

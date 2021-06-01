@@ -5,7 +5,8 @@
 @import url('new_user.css');
 @import url('student.css');
 @import url('teacher.css');
-* {
+@import url('supplier.css');
+*{
     padding: 0;
     margin: 0;
     text-decoration: none;
