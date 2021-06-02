@@ -18,6 +18,9 @@
     color: red;
     font-weight: 600;
 }
+.permanentContainer > .formContainer > form > h6{
+    color: #1de11dcd;
+}
 
 .permanentContainer > .formContainer > form > select{
     height: 2rem;

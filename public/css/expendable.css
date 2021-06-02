@@ -29,5 +29,8 @@
     font-weight: 800;
     margin-top: 10%;
 }
+.expendableContainer > .formContainer > form > h6{
+    color: #1de11dcd;
+}
 
 

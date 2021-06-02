@@ -19,6 +19,9 @@
     color: red;
     font-weight: 600;
 }
+.consumableContainer > .formContainer > form > h6{
+    color: #1de11dcd;
+}
 .consumableContainer > .formContainer  > p{
     font-size: 1.4rem;
     color: #284982;
