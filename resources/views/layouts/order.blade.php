@@ -1,43 +1,64 @@
 @extends('layouts.app')
 @section('content')
-<div class="order_container">
-        {{-- {!! Session::has('msg') ? Session::get('msg') : ' ' !!} --}}
-        <p class="new_order_title">New Order  <a href="{{ url('/home') }}"><i class="hey fas fa-times"></i></a></p>
-        <div class="success">
-
-            {!! Session::has('msg') ? Session::get('msg') : ' ' !!}
-        </div>
-        <form action="{{ url('/home/placeOrder') }}" class="form_order" id="form_order" method="POST">
+    <div class="ordersContainer">
+        <div class="formContainer">
+            <p>new order</p>
+            <form action="{{ url('/home/placeOrder') }}" method="post">
             @csrf
-            <div class="pname">
-                <label for="productName">product name</label><br>
-                <input type="text" name="productName"  id="productName">
-            </div>
-            <div class="cname">
-                <label for="companyName">company name</label><br>
-                <input type="text" name="companyName" id="companyName">
-            </div>
+                <label for="productName">product name </label> <br>
+                <input type="text" name="productName"
+                class="@error('productName') is-invalid @enderror"
+                value="{{ old('productName') }}"
+                autofocus><br>
+                        @error('productName')
+                            <span>{{ $message }}</span> <br>
+                        @enderror
 
-            <div class="rdate">
-                <label for="requiredDate">Required date</label><br>
-                <input type="date" name="requiredDate" id="requiredDate">
-            </div>
-            <div class="uprice">
-                <label for="unitPrice">unit price</label><br>
-                <input type="number" name="unitPrice" id="unitPrice">
-            </div>
-            <div class="qty">
-                <label for="quantity">quantity</label><br>
-                <input type="number" name="quantity" id="quantity">
-            </div>
-            <div class="discount">
-                <label for="discount">discount</label><br>
-                <input type="number" name="discount" id="discount">
-            </div>
-        </form>
-        
+                <label for="companyName">company name</label> <br>
+                <input type="text" name="companyName"
+                class="@error('companyName') is-invalid @enderror"
+                value="{{ old('companyName') }}"><br>
+                        @error('companyName')
+                            <span>{{ $message }}</span> <br>
+                        @enderror
 
-            <button type="submit" class="btn_order" onclick="event.preventDefault();document.getElementById('form_order').submit();">submit</button>
+                <label for="requiredDate">required date</label> <br>
+                <input type="date" name="requiredDate"
+                class="@error('requiredDate') is-invalid @enderror"
+                value="{{ old('requiredDate') }}"> <br>
+                        @error('requiredDate')
+                            <span>{{ $message }}</span> <br>
+                        @enderror
 
+                <label for="unitPtice">unit price</label> <br>
+                <input type="number" name="unitPrice"
+                class="@error('unitPrice') is-invalid @enderror"
+                value="{{ old('unitPrice') }}"> <br>
+                        @error('unitPrice')
+                            <span>{{ $message }}</span> <br>
+                        @enderror
+
+                <label for="quantity">quantity</label> <br>
+                <input type="number" name="quantity"
+                class="@error('quantity') is-invalid @enderror"
+                value="{{ old('quantity') }}"> <br>
+                        @error('qauntity')
+                            <span>{{ $message }}</span> <br>
+                        @enderror
+
+                <label for="discount">discount</label> <br>
+                <input type="number" name="discount"
+                class="@error('discount') is-inavlid @enderror"
+                value="{{ old('discount') }}"> <br>
+                        @error('discount')
+                            <span>{{ $message }}</span> <br>
+                        @enderror
+
+                <button type="submit">submit</button>
+                <h6>{!! Session::has('msg') ? Session::get('msg') : ' ' !!}</h6>
+            </form>
+        </div>
     </div>
 @endsection
+
+

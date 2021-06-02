@@ -37,7 +37,9 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 // New user
-Route::get('/home/new_user', [homepageController::class, 'new_user']);
+Route::get('/home/new_user',
+    [homepageController::class, 'new_user'
+])->name('new_user');
 // New item
 Route::get('/home/new_item', [homepageController::class, 'new_item'])->name('new_item');
 // place order

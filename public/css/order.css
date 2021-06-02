@@ -1,0 +1,57 @@
+.ordersContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.ordersContainer > .formContainer{
+    border: 2px solid #284982;
+    border-radius: 3px;
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem;
+    margin: 0 auto;
+}
+.ordersContainer > .formContainer > form > label{
+    text-transform: capitalize;
+    font-weight: 600;
+    letter-spacing: 0.06rem;
+}
+.ordersContainer > .formContainer > form > input{
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    margin-top: 0.2rem;
+    border: 0.12rem solid var(--sidebarColor);
+}
+
+.ordersContainer > .formContainer > form > span {
+    font-size: 0.7rem;
+    color: red;
+    font-weight: 600;
+}
+.ordersContainer > .formContainer > form > h6{
+    color: #1de11dcd;
+}
+.ordersContainer > .formContainer > form > button{
+    width: 60%;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-weight: 800;
+    margin-top: 10%;
+}
+
+.ordersContainer > .formContainer > p{
+    font-size: 1.4rem;
+    color: #284982;
+    font-weight: 600;
+    padding: 0.2rem 0;
+    margin-bottom: 2%;
+}
+
+
+
+
+
+
+
+

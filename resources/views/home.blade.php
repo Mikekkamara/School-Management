@@ -14,7 +14,7 @@
             <img src="{{ asset('img/newEnt.svg') }}" alt="">
             <p>new item</p>
         </a>
-        <a href="">
+        <a href="{{ route('order') }}">
             <img src="{{ asset('img/order.svg') }}" alt="">
             <p>place order</p>
         </a>
