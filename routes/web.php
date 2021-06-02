@@ -49,7 +49,7 @@ Route::post('/home/placeOrder', [homepageController::class, 'place_order'])->nam
 // store
 Route::get('/home/store', function (){
     return view('layouts.storemgmt');
-});
+})->name('storeOptions');
 // Reports
 Route::get('/home/reports', function (){
     return view('layouts.reports');
@@ -82,8 +82,10 @@ Route::post('/home/new_user/supplier',
 ])->name('createSupplier');
 
 // reorder
-Route::get('/home/store/reorder', [homepageController::class, 'reorder']);
-Route::get('/home/store/expire', [homepageController::class, 'expire']);
+Route::get('/home/store/reorder', [homepageController::class, 'reorder'])
+->name('reOrder');
+Route::get('/home/store/expire', [homepageController::class, 'expire'])
+->name('expire');
 // new consumable
 Route::get('/home/consumables', function (){
     return view('layouts.consumable');

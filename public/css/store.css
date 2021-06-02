@@ -1,0 +1,35 @@
+.storeContainer{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 3% ;
+    align-self: flex-start;
+    width: 100%;
+}
+.storeContainer a{
+    border: 0.14rem solid var(--sidebartextColor);
+    height:9rem;
+    width: 9rem;
+    margin: 1%;
+    object-fit: cover;
+    text-align: center;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    z-index: 8;
+    text-transform: capitalize;
+    padding: 0.2rem;
+    font-weight: 600;
+}
+.storeContainer a:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: 2px 5px 6px var(--sidebartextColor);
+}
+.storeContainer > a > img{
+    height: 100px;
+    width: 100px;
+    margin: 2%;
+}
+.yieldContent{
+    border: 1px solid blue;
+}
+
+

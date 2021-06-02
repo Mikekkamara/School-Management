@@ -18,7 +18,7 @@
             <img src="{{ asset('img/order.svg') }}" alt="">
             <p>place order</p>
         </a>
-        <a href="" >
+        <a href="{{ route('storeOptions') }}" >
             <img src="{{ asset('img/manage.svg') }}" alt="">
             <p>manage store</p>
         </a>
