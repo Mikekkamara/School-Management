@@ -18,7 +18,15 @@
 .comingSoon p span{
     color: #3750a2;
 }
-
+.comingSoon a:hover ~ .joke{
+    display: block;
+}
+.joke{
+    display: none;
+    position: absolute;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
 
 
 

@@ -17,7 +17,7 @@
     margin: 0;
     text-decoration: none;
     list-style: none;
-    font-family: "Open Sans", "San Serif";
+    font-family:-apple-system, 'Open Sans',  BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,'Helvetica Neue', sans-serif;
 }
 
 body,
