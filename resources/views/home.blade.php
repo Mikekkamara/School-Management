@@ -22,7 +22,7 @@
             <img src="{{ asset('img/manage.svg') }}" alt="">
             <p>manage store</p>
         </a>
-        <a href="" >
+        <a href="{{ route('reports') }}" >
             <img src="{{ asset('img/reports.svg') }}" alt="">
             <p>reports</p>
         </a>

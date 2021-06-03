@@ -1,42 +1,50 @@
 /*
 ====================
 7 */
-.reports_container{
-    margin: 0 auto;
-    margin-top: 5%;
+.reportContainer{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 3% ;
+    align-self: flex-start;
+    width: 100%;
+}
+.reportContainer a{
+    border: 0.14rem solid var(--sidebartextColor);
+    height:9rem;
+    width: 9rem;
+    margin: 1%;
+    object-fit: cover;
     text-align: center;
-    width: 80%;
-}
-table{
-    width: fit-content;
-    margin: 0 auto;
-    border-collapse: collapse;
-    border: 1px dotted var(--pri-color);
-}
-th{
-    border: 1px dotted var(--pri-color);
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    z-index: 8;
     text-transform: capitalize;
-    padding: 0.3rem;
-    letter-spacing: var(--letter-space);
-    color: var(--theme-color);
-}
-.report_titles{
-    margin-top: 5%;
-    text-align: center;
-    text-transform: capitalize;
-    font-weight: 500;
-    letter-spacing: var(--letter-space);
-    margin: 2rem;
-    font-size: 1.2rem;
-}
-tr:nth-child(even){
-    background: var(--shade);
-}
-td{
-    height: 2rem;
+    padding: 0.2rem;
+    font-weight: 600;
     font-size: 0.8rem;
-    letter-spacing: var(--letter-space);
-    text-transform: capitalize;
-    color: var(--pri-color);
 }
+.reportContainer a:hover{
+    transform: scale(1.1,1.1);
+    box-shadow: 2px 5px 6px var(--sidebartextColor);
+}
+.reportContainer > a > img{
+    height: 100px;
+    width: 100px;
+    margin: 2%;
+}
+.reportsContainer{
+    align-self: flex-start;
+    margin-top: 5%;
+}
+.reportsContainer > p{
+    padding: 0.2rem 0;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 2%;
+    color:#284982 ;
+}
+
 
