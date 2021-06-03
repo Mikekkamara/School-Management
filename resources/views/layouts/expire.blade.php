@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @section('content')
-    <div class="reports_container">
-        <p class="report_titles">Expiring Items<a href="{{ url('/home/store') }}"><i class="hey fas fa-times"></i></a></p>
+    <div class="expireContainer">
         @if ($count == 0)
             <p class="stock">No products yet</p>
         @else

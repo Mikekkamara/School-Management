@@ -1,0 +1,29 @@
+.reorderContainer{
+    align-self: flex-start;
+    margin-top: 5%;
+}
+.reorderContainer::before{
+    content: "items to re-order";
+    padding: 0.2rem 0;
+    display: block;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 2%;
+    color:#284982 ;
+}
+Table {
+    border-collapse: collapse;
+    text-align: center;
+    text-transform: capitalize;
+    display: block;
+}
+th{
+    border: 1px solid var(--sidebarColor);
+    padding: 0.2rem;
+}
+td{
+    border: 1px dotted var(--sidebartextColor);
+}
+
+
