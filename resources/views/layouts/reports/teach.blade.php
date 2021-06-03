@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
-    <div class="reports_container">
-        <p class="report_titles">teacher's report <a href="{{ url('/home/reports') }}"><i class="hey fas fa-times"></i></a></p>
+    <div class="reportsContainer">
+        <p class="report_titles">teacher's report <a href="{{ url('/home/reports') }}"><i class="fas fa-times"></i></a></p>
         @if ($count==0)
             <p class="stock">No registered teacher</p>
         @else
@@ -20,8 +20,8 @@
                     <td>{{ $teacher->address }}</td>
                     <td>{{ $teacher->mobNumber }}</td>
                 </tr>
+                @endforeach
             </table>
-            @endforeach
 
 
         @endif

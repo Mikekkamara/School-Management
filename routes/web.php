@@ -53,7 +53,7 @@ Route::get('/home/store', function (){
 // Reports
 Route::get('/home/reports', function (){
     return view('layouts.reports');
-});
+})->name('reports');
 // new student
 Route::get('/home/new_user/student', function () {
     return view('layouts.newstudent');
