@@ -13,7 +13,6 @@
 @import url('order.css');
 @import url('store.css');
 @import url('reorder.css');
-@import url('expire.css');
 @import url('reports.css');
 *{
     padding: 0;

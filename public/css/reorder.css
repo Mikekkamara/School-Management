@@ -1,22 +1,13 @@
-.reorderContainer{
+.tableContainer{
     align-self: flex-start;
     margin-top: 5%;
-}
-.reorderContainer::before{
-    content: "items to re-order";
-    padding: 0.2rem 0;
-    display: block;
-    text-transform: capitalize;
-    font-size: 1.4rem;
-    font-weight: 600;
-    margin-bottom: 2%;
-    color:#284982 ;
 }
 Table {
     border-collapse: collapse;
     text-align: center;
     text-transform: capitalize;
     display: block;
+    margin-top: 15%;
 }
 th{
     border: 1px solid var(--sidebarColor);
@@ -24,6 +15,26 @@ th{
 }
 td{
     border: 1px dotted var(--sidebartextColor);
+}
+.tableContainer > p{
+    padding: 0.2rem 0;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 2%;
+    color:#284982 ;
+}
+.tableContainer > span{
+    text-align: center;
+    display: block;
+    border: 1px dotted var(--sidebartextColor);
+    text-transform: capitalize;
+    margin-top: 20%;
+}
+.tableContainer > p > a{
+    margin-left: 1%;
 }
 
 

@@ -1,8 +1,9 @@
 @extends('layouts.app')
 @section('content')
-    <div class="expireContainer">
+    <div class="tableContainer">
+        <p>items near expiry/expired <a href="{{ route('storeOptions')}}"><i class="fas fa-times"></i></a></p>
         @if ($count == 0)
-            <p class="stock">No products yet</p>
+            <span>No products yet</span>
         @else
             <table>
                 <tr>
