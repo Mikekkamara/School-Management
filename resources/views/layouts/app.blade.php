@@ -30,7 +30,7 @@
                     <p>Dashboard</p>
                 </div>
                 <div class="userName">
-                    <a href="#">TestName</a>
+                    <a href="#">{{ Auth::user()->name }}</a>
                     <div class="dropdownDashboard">
                         <ul>
                             <li><i class="far fa-user-circle"></i><a href="">View profile</a></li>
