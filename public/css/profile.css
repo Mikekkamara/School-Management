@@ -2,8 +2,14 @@
     height: 200px;
     width: 200px;
     border-radius: 50%;
+    position: relative;
 }
-
-
+input[type="file"]{
+    display: none;
+}
+.profileContainer .profileimageContainer label{
+    position: absolute;
+    right: 30%;
+}
 
 

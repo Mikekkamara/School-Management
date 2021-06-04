@@ -179,6 +179,11 @@ class homepageController extends Controller
         return redirect()->back();
     }
 
-    // 
+    // view profile
+
+    public function viewProfile(){
+
+        return view('layouts.profile');
+    }
 
 }

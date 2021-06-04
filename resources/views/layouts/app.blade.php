@@ -33,7 +33,7 @@
                     <a href="#">{{ Auth::user()->name }}</a>
                     <div class="dropdownDashboard">
                         <ul>
-                            <li><i class="far fa-user-circle"></i><a href="">View profile</a></li>
+                            <li><i class="far fa-user-circle"></i><a href="/home/profile/{{ Auth::user()->id }}">View profile</a></li>
                             <li>
                                 <i class="far fa-times-circle"></i>
                                 <a href="{{ route('logout') }}" id="logoutButton"
