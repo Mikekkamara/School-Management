@@ -21,5 +21,17 @@ input[type="file"]{
 .editButton{
     color:green;
 }
-
+.profileContainer button{
+    padding: 0.2rem;
+    text-transform: capitalize;
+    color: red;
+    margin-top: 8%;
+}
+.profileContainer > label{
+    text-transform: capitalize;
+    margin: 3% 0;
+    border: 1px solid blue;
+    display: inline-block;
+    font-weight: 600;
+}
 

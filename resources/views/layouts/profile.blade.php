@@ -21,6 +21,10 @@
         <option value="male">Male</option>
         <option value="female">female</option>
     </select> <br>
-    <label for="created">Account created on: </label> <br> {{ Auth::user()->created_at }}
+    <label for="created">Account created on: </label> <br> {{ Auth::user()->created_at }} <br>
+    <label for="accountTyppe">Account type: </label> {{ Auth::user()->type }}
+    <form action="" method="post" id="deleteAccount">@csrf
+    <button type="submit">delete my account</button></form>
+
 </div>
 @endsection
