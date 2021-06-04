@@ -66,6 +66,8 @@ Route::get('/home/new_user/teacher', function () {
 Route::get('/home/new_user/supplier', function () {
     return view('layouts.newsup');
 });
+// profile
+Route::get('/home/profile/{id}', [homepageController::class, 'viewProfile'])->name('profile');
 /*
 ====================
 SAVE NEW USER
