@@ -9,7 +9,17 @@ input[type="file"]{
 }
 .profileContainer .profileimageContainer label{
     position: absolute;
-    right: 30%;
+    right: 35%;
+    top: 43%;
+}
+.profileContainer{
+    border: 1px solid red;
+    align-self: flex-start;
+    padding: 1rem;
+    margin-top: 5%;
+}
+.editButton{
+    color:green;
 }
 
 

@@ -2,10 +2,14 @@
 @section('content')
 <div class="profileContainer">
     <div class="profileimageContainer">
-        <img src="{{ asset('img/male.svg') }}" alt=""> <br>
+        @if (Auth::user()->gender == 'male')
+            <img src="{{ asset('img/male.svg') }}" alt=""> <br>
+        @else
+            <img src="{{ asset('img/female.svg') }}" alt=""> <br>
+        @endif
         <label for="profilePicture">
             <input type="file">
-            Edit
+            <i class="editButton fas fa-edit fa-2x"></i>
         </label><br>
 
 
@@ -16,6 +20,7 @@
         <option value=""></option>
         <option value="male">Male</option>
         <option value="female">female</option>
-    </select>
+    </select> <br>
+    <label for="created">Account created on: </label> <br> {{ Auth::user()->created_at }}
 </div>
 @endsection
