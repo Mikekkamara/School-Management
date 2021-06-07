@@ -8,6 +8,7 @@ use App\Models\Expendable;
 use App\Models\Permanent;
 use App\Models\Student;
 use App\Models\Teacher;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Date;
@@ -183,6 +184,21 @@ class homepageController extends Controller
 
     public function viewProfile(){
         return view('layouts.profile');
+    }
+
+    // updateProfile
+
+    public function updateProfile(Request $request){
+        $name = Auth::user()->name;
+        $pictureName = time().'-'.$name. '.' .$request->file('image')->extension();
+
+        $request->file('image')->move(public_path('profilePictures'), $pictureName);
+        $id = Auth::user()->id;
+        $user = User::find($id)->update([
+            'profilePath'=>$pictureName
+        ]);
+
+        return redirect()->route('profile');
     }
 
 }
