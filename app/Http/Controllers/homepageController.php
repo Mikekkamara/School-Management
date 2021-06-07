@@ -182,10 +182,7 @@ class homepageController extends Controller
     // view profile
 
     public function viewProfile(){
-        $profilePicture = Auth::user()->profilePath;
-        return view('layouts.profile')->with([
-            'profilePicture'=>$profilePicture
-        ]);
+        return view('layouts.profile');
     }
 
 }

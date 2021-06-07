@@ -3,7 +3,7 @@
 <div class="profileContainer">
     <div class="profileimageContainer">
 
-        <img src="../profilePictures/{{ $profilePicture }}" alt="">
+        <img src="{{ asset('./profilePictures/'. Auth::user()->profilePath) }}" alt="">
         <div class="editProfile">
             <form action="" enctype="multipart/form-data" method="post">
             @csrf

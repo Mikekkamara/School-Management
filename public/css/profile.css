@@ -31,7 +31,7 @@
     display: inline-block;
     font-weight: 600;
 }
-/* .custom-file-input {
+.custom-file-input {
     color: transparent;
 }
 .custom-file-input::-webkit-file-upload-button {
@@ -67,7 +67,7 @@
 }
 .editProfile:hover{
     display: block;
-} */
+}
 .profileContainer > select{
     border: none;
     outline: none;
