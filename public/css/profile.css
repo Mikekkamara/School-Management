@@ -1,37 +1,75 @@
-.profileContainer img{
+.profileContainer img {
     height: 200px;
     width: 200px;
     border-radius: 50%;
-    position: relative;
 }
-input[type="file"]{
-    display: none;
-}
-.profileContainer .profileimageContainer label{
-    position: absolute;
-    right: 35%;
-    top: 43%;
-}
-.profileContainer{
-    border: 1px solid red;
+
+.profileContainer {
+    border: 0.2rem solid #284982;
     align-self: flex-start;
     padding: 1rem;
     margin-top: 5%;
+    position: relative;
 }
-.editButton{
-    color:green;
+.editButton {
+    color: green;
 }
-.profileContainer button{
+.profileimageContainer{
+    display: flex;
+    justify-content: center;
+}
+.profileContainer button {
     padding: 0.2rem;
     text-transform: capitalize;
     color: red;
     margin-top: 8%;
 }
-.profileContainer > label{
+.profileContainer > label {
     text-transform: capitalize;
     margin: 3% 0;
-    border: 1px solid blue;
     display: inline-block;
     font-weight: 600;
 }
+.custom-file-input {
+    color: transparent;
+}
+.custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+.custom-file-input::before {
+    content: "Edit";
+    color: black;
+    border-radius: 3px;
+    padding: 0.5rem;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+.custom-file-input:hover::before {
+    border-color: black;
+}
+.custom-file-input:active {
+    outline: 0;
+}
+.editProfile{
+    position: absolute;
+    width: 25%;
+    align-self: center;
+    display: none;
+}
+.profileContainer img:hover ~ .editProfile{
+    display: block;
+}
+.profileContainer img:hover{
+    filter: opacity(50%);
+}
+.editProfile:hover{
+    display: block;
+}
+
+
+
+
+
 
