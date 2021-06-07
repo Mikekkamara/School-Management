@@ -5,10 +5,10 @@
 
         <img src="{{ asset('./profilePictures/'. Auth::user()->profilePath) }}" alt="">
         <div class="editProfile">
-            <form action="{{ route('updateProfile') }}" enctype="multipart/form-data" method="POST">
+            <form action="{{ route('updateProfile') }}" enctype="multipart/form-data" method="POST" id="updateProfile">
             @csrf
                 <input type="file" name="image" class="custom-file-input" id="uploadProfile">
-                <button type="submit">Change</button>
+
             </form>
 
         </div>
@@ -40,6 +40,7 @@
         @csrf
         <button type="submit">delete my account</button>
     </form>
+    <button id="changeButton" type="submit">Change</button>
 
 </div>
 @endsection

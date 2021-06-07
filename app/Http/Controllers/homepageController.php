@@ -198,7 +198,7 @@ class homepageController extends Controller
             'profilePath'=>$pictureName
         ]);
 
-        return redirect()->route('profile');
+        return redirect('/home/profile/'. Auth::user()->id);
     }
 
 }

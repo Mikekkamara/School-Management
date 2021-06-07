@@ -12,8 +12,14 @@ document.getElementById("time").innerHTML = applicationTime;
 
 // var submitButton = document.getElementById("submitTeacher");
 
-function button(){
-    location.reload();
-}
+
+var changeButton = document.getElementById('changeButton');
+var profileChange = document.getElementById('uploadProfile');
+profileChange.addEventListener('click', function(){
+    changeButton.style.display = "block";
+});
+changeButton.onclick = function(){
+    document.getElementById('updateProfile').submit();
+};
 
 

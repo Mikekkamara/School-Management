@@ -67,7 +67,7 @@ Route::get('/home/new_user/supplier', function () {
     return view('layouts.newsup');
 });
 // profile
-Route::get('/home/profile', [homepageController::class, 'viewProfile'])->name('profile');
+Route::get('/home/profile/{id}', [homepageController::class, 'viewProfile'])->name('profile');
 // Update Profile
 
 Route::post('/home/profile/update', [homepageController::class , 'updateProfile'])->name('updateProfile');
