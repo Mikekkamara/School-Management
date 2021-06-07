@@ -64,9 +64,15 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
+        if($data['gender'] == 'male'){
+            $profilePath = 'male.svg';
+        } else{
+            $profilePath = 'female.svg';
+        }
         return User::create([
             'name' => $data['name'],
             'email' => $data['email'],
+            'profilePath'=>$profilePath,
             'password' => Hash::make($data['password']),
         ]);
     }

@@ -41,7 +41,7 @@ img{
     display: block;
     text-transform: capitalize;
     font-weight: 600;
-    margin-bottom: -10px;
+    
 }
 .registerForm > form > div > input{
     font-size: 1.2rem;
@@ -52,6 +52,18 @@ img{
     border: none;
     width: 95%;
     border-bottom: 3px solid var(--sidebarColor);
+}
+.registerForm > form > div > select{
+    font-size: 1.2rem;
+    height: 2rem ;
+    border-radius: 0;
+    background: var(--sideTheme);
+    border: none;
+    width: 95%;
+    border-bottom: 3px solid var(--sidebarColor);
+}
+.registerForm > form > div > select:focus{
+    outline: none;
 }
 .registerForm > form > div > input{
     outline: none;

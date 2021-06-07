@@ -34,6 +34,13 @@
                             </span>
                         @enderror
                     </div>
+                    <div class="gender">
+                        <label for="gender">Gender</label> <br>
+                        <select name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
                     <div class="pass-container">
                         <label for="password">{{ __('Password')}}</label> <br>
                         <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
@@ -59,7 +66,7 @@
             </form>
         </div>
         <div class="bannerText">
-            <span class="store">Store</span>
+            <span class="store">School</span>
             <span class="management">management</span>
             <span class="made">made easier than ever</span>
             <span class="exclamation">!</span>

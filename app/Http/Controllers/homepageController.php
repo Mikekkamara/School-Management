@@ -8,7 +8,7 @@ use App\Models\Expendable;
 use App\Models\Permanent;
 use App\Models\Student;
 use App\Models\Teacher;
-use GuzzleHttp\Promise\Create;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Date;
 
@@ -182,8 +182,10 @@ class homepageController extends Controller
     // view profile
 
     public function viewProfile(){
-
-        return view('layouts.profile');
+        $profilePicture = Auth::user()->profilePath;
+        return view('layouts.profile')->with([
+            'profilePicture'=>$profilePicture
+        ]);
     }
 
 }

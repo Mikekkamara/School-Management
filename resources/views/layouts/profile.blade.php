@@ -3,13 +3,13 @@
 <div class="profileContainer">
     <div class="profileimageContainer">
 
-        @if (Auth::user()->gender == 'male')
-            <img src="{{ asset('img/male.svg') }}" alt=""> <br>
-        @else
-            <img src="{{ asset('img/female.svg') }}" alt=""> <br>
-        @endif
+        <img src="../profilePictures/{{ $profilePicture }}" alt="">
         <div class="editProfile">
-            <input type="file" name="uploadProfile" class="custom-file-input" id="uploadProfile">
+            <form action="" enctype="multipart/form-data" method="post">
+            @csrf
+                <input type="file" name="uploadProfile" class="custom-file-input" id="uploadProfile">
+            </form>
+
         </div>
 
 
