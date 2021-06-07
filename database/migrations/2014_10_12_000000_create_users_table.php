@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('type')->default('user');
             $table->string('password');
             $table->string('profilePath');
-            $table->string('gender')->default('');
+            $table->string('gender');
             $table->rememberToken();
             $table->timestamps();
         });
