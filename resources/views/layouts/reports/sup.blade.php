@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('content')
     <div class="reportsContainer">
-        <p class="report_titles">supplier report <a href="{{ url('/home/reports') }}"><i class="fas fa-times"></i></a></p>
+        <p>supplier's report  <a href="{{ url('/home/reports') }}"><i class="fas fa-times"></i></a></p>
         @if ($count==0)
-            <p class="stock">no supplier registered</p>
+            <span> no suppliers registered yet </span>
         @else
 
             <table>
