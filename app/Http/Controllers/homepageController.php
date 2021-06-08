@@ -75,7 +75,7 @@ class homepageController extends Controller
         $days = $sec / 86400;
 
         $validated = $request->validate([
-            'productName'=>'required|unique:consumables,productName',
+            'productName'=>'required|unique:consumables,productName|alpha',
             'unitPrice'=>'required|numeric',
             'expiryDate'=>'required|date',
             'deliveryDate'=>'required',

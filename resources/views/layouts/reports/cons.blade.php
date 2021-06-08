@@ -6,8 +6,9 @@
             <p class="stock">please register new items</p>
         @else
             <table>
+                
                 <tr>
-                    <th>no.</th>
+                    <th>Product no.</th>
                     <th>product name</th>
                     <th>delivery date</th>
                     <th>expiry date</th>
@@ -15,6 +16,7 @@
                     <th>days to expiry</th>
                     <th>status</th>
                 </tr>
+
                 @foreach ($consumables as $consumable)
                     <tr>
                         <td>{{ $consumable->productNumber }}</td>
