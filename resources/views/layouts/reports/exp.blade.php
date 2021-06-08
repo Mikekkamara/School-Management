@@ -1,9 +1,9 @@
 @extends('layouts.app')
 @section('content')
     <div class="reportsContainer">
-        <p class="report_titles">expendable inventory report <a href="{{ url('/home/reports') }}"><i class="fas fa-times"></i></a></p>
+        <p>teacher's report  <a href="{{ url('/home/reports') }}"><i class="fas fa-times"></i></a></p>
         @if ($count == 0)
-            <p class="stock">No products yet</p>
+            <span> no products yet </span>
         @else
             <table>
                 <tr>
