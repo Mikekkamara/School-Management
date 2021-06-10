@@ -13,8 +13,8 @@
         <div class="sidebar">
             <ul class="sidebarLinks">
                 <li><a href="{{ url('/home/category') }}">show categories</a></li>
-                <li><a href="">update storage</a></li>
-                <li><a href="">items reorder</a></li>
+                <li><a href="{{ url('/home/category/updates') }}">update storage</a></li>
+                <li><a href="{{ route('reOrder') }}">items reorder</a></li>
                 <li class="more"><a href="">more</a></li>
                 <div class="moreLinks">
                     <ul>

@@ -66,7 +66,7 @@
             </form>
         </div>
         <div class="bannerText">
-            <span class="store">School</span>
+            <span class="store">Store</span>
             <span class="management">management</span>
             <span class="made">made easier than ever</span>
             <span class="exclamation">!</span>
