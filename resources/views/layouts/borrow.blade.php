@@ -1,60 +1,52 @@
 @extends('layouts.app')
 @section('content')
-    <div class="borrow_container">
+<div class="ordersContainer">
+
+    <div class="formContainer">
         <p class="report_titles">Request an Item<a href="{{ url('/home') }}"><i class="hey fas fa-times"></i></a></p>
         <form action="" id="borrow_form" method="post">
         @csrf
-        <div class="appName">
-            <label for="appName">Applicant Name</label>
+            <label for="appName">Applicant Name</label> <br>
             <select name="appName" id="appName">
                 <option value="{{ $hey }}">{{ $hey }}</option>
-            </select>
-        </div>
+            </select> <br>
+
 
         @if (false)
 
-            <div class="admissionNo">
-                <label for="admissionNo">Admission Number</label>
-                <input type="number" name="admissionNo" id="admNo" placeholder="adm">
-            </div>
+                <label for="admissionNo">Admission Number</label> <br>
+                <input type="number" name="admissionNo" id="admNo" placeholder="adm"> <br>
 
         @else
 
-            <div class="iDNo">
-                <label for="iDNo">ID Number</label>
-                <input type="number" name="iDNo" id="idNo" >
-            </div>
+                <label for="iDNo">ID Number</label> <br>
+                <input type="number" name="iDNo" id="idNo" > <br>
 
         @endif
 
-        <div class="proName">
-            <label for="proName">Product Name</label>
-            <input type="text" name="proName">
-        </div>
-        <div class="cond">
-            <label for="cond">Condition</label>
+            <label for="proName">Product Name</label> <br>
+            <input type="text" name="proName"> <br>
+
+            <label for="cond">Condition</label> <br>
             <select name="cond" id="cond">
                 <option value="New">New</option>
                 <option value="Old">Old</option>
-            </select>
-        </div>
-        <div class="duration">
-            <label for="duration">Borrow Duration</label>
-            <input type="" name="duration" id="duration">
-        </div>
-        <div class="retDate">
-            <label for="retDate">Return date</label>
-            <input type="date" name="retDate" id="retDate">
-        </div>
-        <div class="returned">
-            <label for="returned">Return status</label>
+            </select> <br>
+
+            <label for="duration">Borrow Duration</label> <br>
+            <input type="" name="duration" id="duration"> <br>
+
+            <label for="retDate">Return date</label> <br>
+            <input type="date" name="retDate" id="retDate"> <br>
+
+            <label for="returned">Return status</label> <br>
             <select name="returned" id="returned">
                 <option value="Returned">Returned</option>
                 <option value="Not Returned">Not Returned</option>
-            </select>
-        </div>
-        </form>
+            </select> <br>
 
-        <button type="submit" class="borrow_btn" onclick="event.preventDefault();document.getElementById('borrow_form').submit();">submit</button>
+            <button type="submit">submit</button>
+        </form>
     </div>
+</div>
 @endsection

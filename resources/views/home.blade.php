@@ -30,7 +30,7 @@
             <img src="{{ asset('img/reports.svg') }}" alt="">
             <p>reports</p>
         </a>
-        <a href="" >
+        <a href="{{ route('Borrow') }}" >
             <img src="{{ asset('img/process.svg') }}" alt="">
             <p>request an item</p>
         </a>
