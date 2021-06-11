@@ -21,6 +21,9 @@ use Jenssegers\Agent\Facades\Agent;
 Route::get('/', function () {
         return view('welcome');
 });
+Route::get('/home/about', function () {
+        return view('layouts.aboutUs');
+})->name('about');
 
 Route::get('/home/category', function () {
     return view('home') ;

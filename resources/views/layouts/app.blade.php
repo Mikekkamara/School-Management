@@ -18,7 +18,7 @@
                 <li class="more"><a href="">more</a></li>
                 <div class="moreLinks">
                     <ul>
-                        <li><i class="fas fa-info"></i><a href=""> About Us</a></li>
+                        <li><i class="fas fa-info"></i><a href="{{ route('about') }}"> About Us</a></li>
                         <li><i class="far fa-address-book"></i><a href="">Contacts</a></li>
                     </ul>
                 </div>
