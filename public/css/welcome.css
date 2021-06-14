@@ -14,41 +14,50 @@ html {
 }
 .welcomeContainer{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    min-width: 100vw;
+    min-height: 100vh;
 }
 .splashImage{
-    width: 50%;
-    height: 50vh;
-    object-fit: cover;
+    width: 100%;
     margin: 0 auto;
 }
-.splashImage img{
-    height:100% ;
+.welcomeContainer img{
+    flex: 1;
+    height: fit-content;
+    width: 50%;
 }
-.splashText{
-    width: 30%;
+.welcomeContainer p{
+    height: fit-content;
+    margin: 1%;
+    padding: 0.3%;
     text-align: center;
     letter-spacing: 1px;
     line-height: 2rem;
-    margin: auto;
-    margin-top: 4%;
 }
-.splashLinks{
-    width: 20%;
-    margin: auto;
-    text-align: center;
-    margin-top: 3%;
-    padding: 0.2rem;
-}
-.splashLinks a{
+.welcomeContainer a{
     color: var(--sidebarColor);
     font-size: 1.3rem;
     text-transform: uppercase;
     padding: 0.3rem;
     border: 1px solid var(--sidebartextColor);
+    margin: 1%;
 }
-
-
+.splashText{
+    width: 90%;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    margin: auto;
+    margin-top: 3%;
+}
+.splashLinks{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    margin-top: 3%;
+    padding: 0.2rem;
+    height: fit-content;
+}
 
 

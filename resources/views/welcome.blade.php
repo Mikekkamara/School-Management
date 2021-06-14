@@ -9,20 +9,18 @@
 </head>
 <body>
     <div class="welcomeContainer">
-        <div class="splashImage">
+
             <img src="{{ asset('./img/undraw_road_to_knowledge_m8s0.svg') }}"
             alt="">
 
-        </div>
-        <div class="splashText">
+
             <p >
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Maxime soluta vitae dolorum facilis consequatur? Iure sed
                 repudiandae tenetur nostrum nemo quam, debitis, eveniet ducimus
                 vero rem, dicta accusantium voluptate. Nam.
             </p>
-        </div>
-        <div class="splashLinks">
+
             @if (Route::has('login'))
                 @auth
                     <a href="{{ url('/home') }}">home</a>
@@ -34,7 +32,6 @@
                 @endif
                 @endauth
             @endif
-        </div>
     </div>
 </body>
 </html>
