@@ -17,6 +17,9 @@ html {
     min-height: 100vh;
     display: flex;
 }
+.textContainer p{
+    display: none;
+}
 img{
     margin: 0 auto;
     height: 100vh;
@@ -133,6 +136,34 @@ img{
 @keyframes grow{
     0% {transform: scale(1,1);}
     100% {transform: scale(1.4,1.4);}
+}
+@media screen and (max-width: 800px){
+    .loginWords{
+        display: none;
+    }
+    .loginForm{
+        font-size:1.7rem;
+    }
+}
+@media screen and (max-width: 540px) {
+    .textContainer img{
+        display: none;
+    }
+    .loginForm{
+        font-size: 1rem;
+    }
+    .textContainer p{
+        display: block;
+        height: fit-content;
+        margin: 0 auto;
+        padding: 2%;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 10%;
+    }
+    .loginForm{
+        margin: auto;
+    }
 }
 
 
