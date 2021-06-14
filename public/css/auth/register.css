@@ -37,11 +37,14 @@ img{
     border: 3px solid var(--sidebarColor);
     padding: 2%;
 }
+.registerContainer p{
+    display: none;
+}
 .registerForm > form > div > label{
     display: block;
     text-transform: capitalize;
     font-weight: 600;
-    
+
 }
 .registerForm > form > div > input{
     font-size: 1.2rem;
@@ -132,7 +135,36 @@ img{
     left: 5%;
     color: var(--sidebartextColor);
 }
+@media screen and (max-width: 800px){
+    .bannerText{
+        display: none;
+    }
+    .registerForm{
+        font-size:1.5rem;
+    }
+}
+@media screen and (max-width: 540px) {
+    .registerContainer img{
+        display: none;
+    }
+    .registerForm{
+        font-size: 1rem;
+        margin: auto;
+        margin-top: 30%;
+        margin-bottom: 5%;
+    }
+    .registerContainer p{
+        display: block;
+        height: fit-content;
+        margin: 0 auto;
+        padding: 2%;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-top: 10%;
+        text-transform: capitalize;
+    }
 
+}
 
 
 

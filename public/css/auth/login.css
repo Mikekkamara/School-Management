@@ -151,6 +151,7 @@ img{
     }
     .loginForm{
         font-size: 1rem;
+        margin: auto;
     }
     .textContainer p{
         display: block;
@@ -161,9 +162,7 @@ img{
         font-weight: 600;
         margin-top: 10%;
     }
-    .loginForm{
-        margin: auto;
-    }
+    
 }
 
 
