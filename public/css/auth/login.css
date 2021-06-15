@@ -158,11 +158,15 @@ img{
         height: fit-content;
         margin: 0 auto;
         padding: 2%;
-        font-size: 1.2rem;
+        font-size: 1.7rem;
         font-weight: 600;
         margin-top: 10%;
     }
-    
+    .loginForm{
+        width: 70%;
+        margin-top: 30%;
+    }
+
 }
 
 
