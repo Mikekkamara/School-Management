@@ -10,7 +10,7 @@
 <body>
     <div class="registerContainer">
         <img src="{{ asset('img/method-draw-image (2).svg') }}" alt="">
-        <p>create an account</p>
+        <p class="registerTitle">create an account</p>
         <div class="registerForm">
 
             <form method="POST" action="{{ route('register') }}">

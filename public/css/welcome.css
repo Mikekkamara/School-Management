@@ -39,23 +39,11 @@ html {
     padding: 0.3rem;
     border: 1px solid var(--sidebartextColor);
     margin: 1%;
-}
-.splashText{
-    width: 90%;
+    border: 2px solid #6C63FF;
+    width: 20%;
     text-align: center;
-    letter-spacing: 1px;
-    line-height: 2rem;
-    margin: auto;
-    margin-top: 3%;
 }
-.splashLinks{
-    width: 90%;
-    margin: auto;
-    text-align: center;
-    margin-top: 3%;
-    padding: 0.2rem;
-    height: fit-content;
-}
+
 @media screen and (max-width:800px){
     .welcomeContainer{
         flex-direction: column;
@@ -80,8 +68,8 @@ html {
         font-size: 1rem;
     }
     .welcomeContainer a{
-        font-size: 1.2rem;
-        display: inline-block;
+        display: block;
+        font-size: 1rem;
     }
 
 }
