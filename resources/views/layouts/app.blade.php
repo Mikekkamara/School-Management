@@ -47,7 +47,7 @@
             </nav>
 
             <div class="mobileNavigation">
-                <button id="dropnavigationButton" onclick="toggleFunction()">hey</button>
+                <button class="dropNavigationButton" id="dropnavigationButton" onclick="toggleFunction()"><i class="dropNavigation fas fa-bars"></i></button>
                 <ul class="sidebarLinks" id="sidebarLinks">
                     <li><a href="{{ url('/home/category') }}">show categories</a></li>
                     <li><a href="{{ url('/home/category/updates') }}">update storage</a></li>

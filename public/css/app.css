@@ -156,8 +156,13 @@ html {
     .sidebar{
         display: none;
     }
-    .dropnavigationButton{
-        z-index: 100;
+    .dropNavigation{
+        font-weight: 800;
+    }
+    .dropNavigationButton{
+        background: white;
+        border: none;
+        margin: 2%;
     }
     .yieldContent{
         border: 3px solid green;
