@@ -10,7 +10,7 @@
 <body>
     <div class="textContainer">
         <img src="{{ asset('img/method-draw-image (2).svg') }}" alt="">
-        <p>Sign in to your account</p>
+        <p>Sign into your account</p>
         <div class="loginForm">
             <form action="" method="post" autocomplete="off">
             @csrf

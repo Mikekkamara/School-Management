@@ -22,4 +22,21 @@ changeButton.onclick = function(){
     document.getElementById('updateProfile').submit();
 };
 
+// var toggleButton = document.getElementById("dropnavigationButton");
+var state = "off";
+function toggleFunction(){
+    if(state == "off"){
+        state = "on";
+        // console.log("on");
+    } else{
+        state = "off";
+        // console.log("off");
+    }
+    if(state == "off"){
+        document.getElementById("sidebarLinks").style.display = "none";
+    } else{
+        document.getElementById("sidebarLinks").style.display = "block";
+    }
+}
+
 

@@ -24,6 +24,7 @@
                 </div>
             </ul>
         </div>
+
         <div class="contentContainer">
             <nav class="navigationBoard">
                 <div class="dashboardTitle">
@@ -44,6 +45,22 @@
                     </div>
                 </div>
             </nav>
+
+            <div class="mobileNavigation">
+                <button id="dropnavigationButton" onclick="toggleFunction()">hey</button>
+                <ul class="sidebarLinks" id="sidebarLinks">
+                    <li><a href="{{ url('/home/category') }}">show categories</a></li>
+                    <li><a href="{{ url('/home/category/updates') }}">update storage</a></li>
+                    <li><a href="{{ route('reOrder') }}">items reorder</a></li>
+                    <li class="more"><a href="#">more</a></li>
+                    <div class="moreLinks">
+                        <ul>
+                            <li><i class="fas fa-info"></i><a href="{{ route('about') }}"> About Us</a></li>
+                            <li><i class="far fa-address-book"></i><a href="">Contacts</a></li>
+                        </ul>
+                    </div>
+                </ul>
+        </div>
 
             <article class="yieldContent">
                 @yield('content')
