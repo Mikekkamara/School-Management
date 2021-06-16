@@ -45,6 +45,18 @@
     font-weight: 800;
     margin-top: 1rem;
 }
+@media screen and (max-width: 800px){
+
+}
+@media screen and (max-width: 540px) {
+    .teacherContainer{
+        align-self: flex-start;
+        margin-top: 4%;
+    }
+    .formContainer{
+        margin-right: 3%;
+    }
+}
 
 
 

@@ -3,7 +3,7 @@
     <a
         class="{{ request()->is('home/new_user/teacher') ? 'active' : '' }}"
         href="/home/new_user/teacher">
-        <img src="{{ asset('../img/teacher.svg') }}" alt="">
+        <img src="{{ asset('../img/teacher.svg') }}" alt=""> 
         Teacher
     </a>
 
