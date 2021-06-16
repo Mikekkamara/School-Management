@@ -31,6 +31,21 @@
 .active{
     border: 0.2rem solid var(--sidebartextColor) !important;
 }
+@media screen and (max-width: 800px){
+
+}
+@media screen and (max-width: 540px) {
+    .navBar{
+        width: 70vw;
+        height: fit-content;
+
+    }
+    .navBar a{
+        width: fit-content;
+    }
+
+
+}
 
 
 

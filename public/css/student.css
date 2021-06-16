@@ -64,7 +64,16 @@
     padding: 0.2rem 0;
     margin-bottom: 2%;
 }
+@media screen and (max-width: 800px){
 
+}
+@media screen and (max-width: 540px) {
+    .studentContainer{
+        align-self: flex-start;
+        margin-top: 4%;
+    }
+
+}
 
 
 

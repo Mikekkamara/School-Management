@@ -179,9 +179,10 @@ html {
         /* border: 1px solid blue; */
     }
     .mobileNavigation{
-        /* border: 1px solid red; */
+        display: block;
     }
     .sidebarLinks{
+        margin: 0;
         display: none;
     }
 
