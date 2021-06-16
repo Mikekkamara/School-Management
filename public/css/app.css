@@ -67,7 +67,7 @@ html {
 .dropdownDashboard {
     position: absolute;
     display: none;
-    z-index: 10;
+    z-index: 100;
     background: var(--sideTheme);
     transition: all 2s ease-in;
     margin-top: 2px;
@@ -150,7 +150,15 @@ html {
     display: block;
 }
 @media screen and (max-width: 800px){
-
+    .sidebar{
+        width: 40%;
+    }
+    .sidebarLinks{
+        margin-top: 30%;
+    }
+    .mobileNavigation{
+        display: none;
+    }
 }
 @media screen and (max-width: 540px) {
     .sidebar{
@@ -176,7 +184,7 @@ html {
     .sidebarLinks{
         display: none;
     }
-    
+
 }
 
 
